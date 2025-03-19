@@ -2,6 +2,8 @@
 
 A cryptocurrency trading platform focused on KOL (Key Opinion Leader) tracking and trading strategies with integrated Twitter sentiment analysis.
 
+[查看完整产品需求文档 (PRD)](./PRD.md)
+
 ## Overview
 
 MCP is a platform focused on cryptocurrency trading and KOL management. It allows users to track, analyze, and follow the cryptocurrency trading activities of KOLs, with a special focus on investment opportunities in popular coins. Users can combine MCP's Twitter data sentiment analysis capability to make more precise investment decisions.
