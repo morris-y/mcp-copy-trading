@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, Suspense } from "react"
 import { useSearchParams } from "next/navigation"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -13,7 +13,8 @@ import { ArrowLeft, Info, ChevronDown } from "lucide-react"
 import Link from "next/link"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 
-export default function NewStrategyPage() {
+// 这个组件负责处理搜索参数逻辑
+function StrategyFormContent() {
   const [strategyName, setStrategyName] = useState("")
   const [buyEnabled, setBuyEnabled] = useState(true)
   const [sellEnabled, setSellEnabled] = useState(true)
@@ -593,5 +594,14 @@ export default function NewStrategyPage() {
         </Button>
       </div>
     </div>
+  )
+}
+
+// 使用Suspense边界包裹主组件
+export default function NewStrategyPage() {
+  return (
+    <Suspense fallback={<div className="container py-6">加载中...</div>}>
+      <StrategyFormContent />
+    </Suspense>
   )
 }
