@@ -17,6 +17,10 @@ MCP is a platform focused on cryptocurrency trading and KOL management. It allow
 - **Memory-Based Optimization**: Automatically adjust trading parameters based on historical interactions
 - **Modern Dark UI**: Exclusive dark mode with high contrast text and teal/aqua accent (#00FF9D)
 
+## Product Screenshot
+
+![MCP Copy Trading Screenshot](/public/Capture.PNG)
+
 ## Target Users
 
 - Cryptocurrency investors and traders
